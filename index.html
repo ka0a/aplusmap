@@ -1,4 +1,144 @@
-   <header>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A+받을지도?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://ifh.cc/g/RCgpQq.jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: #E0F2F7;
+            color: #111;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            border: 2px solid black;
+        }
+
+        .header-left,
+        .header-right {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            z-index: -1;
+        }
+
+        .header-left {
+            left: 0;
+        }
+
+        .header-right {
+            right: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            position: relative; /* 추가 */
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 55%;
+            transform: translateX(58%) translateY(-13%);
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            height: 20px; /* 버튼의 높이를 조절합니다 */
+            width: 20px;
+            padding: 2px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 10px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            background-color: black;
+        }
+
+        .prev {
+            left: 0;
+            transform: translateX(600%) translateY(-350%);
+        }
+
+        .next {
+            right: 0;
+            transform: translateX(-320%) translateY(-350%);
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: -40px;
+            border-radius: 5px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
         <div class="header-left"></div>
         <div class="header-right"></div>
         <h1>여기서 공부하면 A+ 받을 수 있을'지도' 사용방법!</h1>
@@ -87,3 +227,6 @@
 
         showSlides();
     </script>
+</body>
+</html>
+
